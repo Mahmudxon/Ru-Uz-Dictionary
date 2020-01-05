@@ -16,10 +16,10 @@ class NavigationFragment :
             return@setOnTouchListener true
         }
 
-        naviagtion_content?.setOnTouchListener { _, _ ->
-            // hech narsa ;-)
-            return@setOnTouchListener true
-        }
+//        naviagtion_content?.setOnTouchListener { _, _ ->
+//            // hech narsa ;-)
+//            return@setOnTouchListener true
+//        }
     }
 
 }

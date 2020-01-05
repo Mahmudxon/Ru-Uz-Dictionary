@@ -18,7 +18,7 @@ class MainPresenter(private val view: MainView, private val repository: Reposito
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe({
-                    view.loadDataToAdapter(it)
+                    view.loadData(it)
                 }, {
                     view.errorRead("${it.message}")
                 })
@@ -32,7 +32,7 @@ class MainPresenter(private val view: MainView, private val repository: Reposito
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe({
-                    view.loadDataToAdapter(it)
+                    view.loadData(it)
                 }, {
                     view.errorRead("${it.message}")
                 })
@@ -50,7 +50,7 @@ class MainPresenter(private val view: MainView, private val repository: Reposito
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe({
-                    view.loadDataToAdapter(it)
+                    view.loadData(it)
                 }, {
                     view.errorRead("${it.message}")
                 })
@@ -64,7 +64,7 @@ class MainPresenter(private val view: MainView, private val repository: Reposito
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe({
-                    view.loadDataToAdapter(it)
+                    view.loadData(it)
                 }, {
                     view.errorRead("${it.message}")
                 })
